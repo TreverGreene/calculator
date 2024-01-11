@@ -7,8 +7,8 @@ body{
 }
 
 #calculatorBody{
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 750px;
     background-color: blue;
     display: flex;
     flex-direction: column;
@@ -18,16 +18,23 @@ body{
     border-color: black;
     border-style: solid;
     border-width: 3px;
+    border-radius: 25px;
 }
 
 #calculatorBody #window{
-    padding:10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
+    padding:2px;
     background-color: beige;
     margin-top: 10px;
     margin-bottom: 25px;
     border-color: black;
     border-style: ridge;
     border-width: 5px;
+    flex-grow: 0;
+    height: 80px;
 }
 
 #calculatorBody div{
@@ -38,11 +45,16 @@ body{
     border-color: black;
     border-style: solid;
     border-width: 1px;
+
 }
 
 #calculatorBody div.row{
     background-color: blue;
     border-color: white;
+}
+
+#calculatorBody div.key{
+    border-radius: 10px;
 }
 
 #calculatorBody div.number{
